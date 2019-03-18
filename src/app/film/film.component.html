@@ -1,22 +1,55 @@
     <mat-card class="example-card">
         <mat-card-header>
-          <div mat-card-avatar class="example-header-image"></div>
-          <mat-card-title>Shiba Inu</mat-card-title>
-          <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+        <section>
+          <mat-card-title></mat-card-title>
+          <mat-card-subtitle></mat-card-subtitle>
+        </section>
         </mat-card-header>
-        <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
-        <mat-card-content class ="mat-card-content" >
-            <div>{{film.tytul}}</div>
-            <div>{{film.premiera}}</div>
-            <div>{{film.produkcja}}</div>
-            <div>{{film.gatunek}}</div>
-            <div>{{film.rezyser}}</div>
-            <div>{{film.aktorzy}}</div>
-            <div>{{film.ocena}}</div>
+        <section class="list-group-item">
+        <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Film photo">
+       </section>
+        <mat-card-content class ="panel-group">
+
+           <section class="list-group-item panel panel-info">
+              <div class="panel-heading">Tytuł</div>
+              <div class="panel-body">{{film.tytul}}</div>
+            </section>
+
+            <section class="list-group-item panel panel-info">
+              <div class="panel-heading">Produkcja</div>
+              <div class="panel-body">{{film.produkcja}}</div>
+            </section>
+          
+            <section class="list-group-item panel panel-info">
+              <div class="panel-heading">Premiera</div>
+              <div class="panel-body">{{film.premiera}}</div>
+            </section>
+
+            <section class="list-group-item panel panel-info">
+              <div class="panel-heading">Gatunek</div>
+              <div class="panel-body">{{film.gatunek}}</div>
+            </section>
+
+            <section class="list-group-item panel panel-info">
+              <div class="panel-heading">Reżyser</div>
+              <div class="panel-body">{{film.rezyser}}</div>
+            </section>
+
+            <section class="list-group-item panel panel-info">
+              <div class="panel-heading">Aktorzy</div>
+              <div class="panel-body">{{film.aktorzy}}</div>
+            </section>
+
+            <section class="list-group-item panel panel-info">
+              <div class="panel-heading">Ocena</div>
+              <div class="panel-body">{{film.ocena}}</div>
+            </section>
+
         </mat-card-content>
         <mat-card-actions>
-          <button mat-button>LIKE</button>
-          <button mat-button>SHARE</button>
+          <button mat-button class="btn btn-info btn-lg">
+              <span class="glyphicon glyphicon-star"></span> Zostaw ocene
+          </button>
         </mat-card-actions>
       </mat-card>
 
