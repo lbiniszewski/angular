@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { FormComponent } from './form/form.component';
+import { FormComponent } from './films/films.component';
 import { FilmComponent } from './film/film.component';
 
 import {MatCardModule} from '@angular/material/card';

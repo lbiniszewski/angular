@@ -2,9 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { Film } from '../film.model';
 
 @Component({
-  selector: 'app-form',
-  templateUrl: './form.component.html',
-  styleUrls: ['./form.component.scss']
+  selector: 'app-films',
+  templateUrl: './films.component.html',
+  styleUrls: ['./films.component.scss']
 })
 export class FormComponent implements OnInit {
 
