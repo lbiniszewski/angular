@@ -5,5 +5,7 @@ export class Film {
   gatunek: string[];
   rezyser: string;
   aktorzy: string[];
-  ocena: number
+  ocena: number;
+  poster: string;
+  opis: string;
  }

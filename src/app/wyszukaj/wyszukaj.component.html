@@ -1,0 +1,20 @@
+
+<mat-form-field>
+<section class="form-group">
+  <input  matInput placeholder="podaj nazwe filmu" #search>
+   <button  class= "btn-success" (click) = "onWyszukajClick(search.value)" at-raised-button>Wyszukaj</button>
+  </section>
+</mat-form-field>
+
+<section *ngIf = "searchString">
+    <h2>
+     Wyniki frazy wyszukiwanej {{searchString}}
+    </h2>
+  </section>
+
+
+<section>
+    <app-film *ngFor="let f of searchResults" [film]="f"></app-film>
+</section>
+
+

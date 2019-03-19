@@ -1,4 +1,7 @@
     <mat-card class="example-card">
+
+        <div id="img" [ngStyle] = "{'background-image': 'url('+film.poster +')'}"></div>
+        <img mat-card-image id="poster" [src]="film.poster" alt="Film photo">
         <mat-card-header>
         <section>
           <mat-card-title></mat-card-title>
@@ -6,7 +9,7 @@
         </section>
         </mat-card-header>
         <section class="list-group-item">
-        <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Film photo">
+
        </section>
         <mat-card-content class ="panel-group">
 
@@ -19,7 +22,7 @@
               <div class="panel-heading">Produkcja</div>
               <div class="panel-body">{{film.produkcja}}</div>
             </section>
-          
+
             <section class="list-group-item panel panel-info">
               <div class="panel-heading">Premiera</div>
               <div class="panel-body">{{film.premiera}}</div>
@@ -39,6 +42,11 @@
               <div class="panel-heading">Aktorzy</div>
               <div class="panel-body">{{film.aktorzy}}</div>
             </section>
+
+            <section class="list-group-item panel panel-info">
+                <div class="panel-heading">Opis</div>
+                <div class="panel-body">{{film.opis}}</div>
+              </section>
 
             <section class="list-group-item panel panel-info">
               <div class="panel-heading">Ocena</div>
