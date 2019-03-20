@@ -5,15 +5,16 @@
     <span class="navbar-brand">
         Welcome to {{ title }}!
     </span>
-  <a class="navbar-brand" [routerLink]="[ '/', routeParam ]">Strona główna</a>
-  <a class="navbar-brand" [routerLink]="[ '/wyszukaj', routeParam ]">Wyszukiwarka</a>
-  <a class="navbar-brand" [routerLink]="[ '/nowy-film', routeParam ]">Dodaj nowy film</a>
+  <a class="navbar-brand" [routerLink]="[ '/']">Strona główna</a>
+  <a class="navbar-brand" [routerLink]="[ '/wyszukaj']">Wyszukiwarka</a>
+  <a class="navbar-brand" [routerLink]="[ '/nowy']">Dodaj nowy film</a>
 
 </nav>
 
   <h1>
     Welcome to {{ title }}!
   </h1>
+  <router-outlet></router-outlet>
+  
+<!-- <app-films></app-films> -->
 
-<app-films></app-films>
-<router-outlet></router-outlet>

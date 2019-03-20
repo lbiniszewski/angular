@@ -1,3 +1,4 @@
+import { NowyFilmComponent } from './nowy-film/nowy-film.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -12,7 +13,12 @@ import { WyszukajComponent } from './wyszukaj/wyszukaj.component';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import { HttpClientModule } from '@angular/common/http';
-
+import {AngularFireModule} from '@angular/fire';
+import {AngularFireDatabaseModule} from '@angular/fire/database';
+import { AngularFirestoreModule} from '@angular/fire/firestore'
+import { environment } from 'src/environments/environment';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @ NgModule({
@@ -20,7 +26,8 @@ import { HttpClientModule } from '@angular/common/http';
     AppComponent,
     FilmsComponent,
     FilmComponent,
-    WyszukajComponent
+    WyszukajComponent,
+    NowyFilmComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +36,12 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserAnimationsModule,
     MatFormFieldModule,
     MatInputModule,
-    HttpClientModule
+    HttpClientModule,
+    AngularFireDatabaseModule,
+    AngularFirestoreModule,
+    AngularFireModule.initializeApp(environment.firestoreConfig),
+    MatSnackBarModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,7 +1,7 @@
     <mat-card class="example-card">
 
         <div id="img" [ngStyle] = "{'background-image': 'url('+film.poster +')'}"></div>
-        <img mat-card-image id="poster" [src]="film.poster" alt="Film photo">
+
         <mat-card-header>
         <section>
           <mat-card-title></mat-card-title>
@@ -58,6 +58,12 @@
           <button mat-button class="btn btn-info btn-lg">
               <span class="glyphicon glyphicon-star"></span> Zostaw ocene
           </button>
+          <button mat-button class="btn btn-info btn-lg" (click)="onZapiszClick()">
+            <span class="glyphicon glyphicon-star"></span> Zapisz w bazie
+        </button>
+        <button mat-button class="btn btn-info btn-lg" (click)="onUsunClick()">
+          <span class="glyphicon glyphicon-star"></span> Usuń z bazy
+      </button>
         </mat-card-actions>
       </mat-card>
 

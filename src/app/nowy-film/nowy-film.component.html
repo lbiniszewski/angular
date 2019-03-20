@@ -1,0 +1,15 @@
+<form [formGroup]="nowyFilm">
+<mat-form-field>
+  <input matInput placeholder="Tytul" formControlName='tytul'>
+</mat-form-field>
+<mat-form-field>
+  <textarea matInput placeholder="Opis" formControlName='opis'></textarea>
+</mat-form-field>
+<mat-form-field>
+  <input matInput placeholder="Premiera" formControlName='premiera'>
+</mat-form-field>
+<mat-form-field>
+  <input matInput placeholder="Ocena" formControlName='ocena'>
+</mat-form-field>
+<button type="button" mat-raised-button (click)="onDodajBtnClick()">Dodaj Film</button>
+</form>
